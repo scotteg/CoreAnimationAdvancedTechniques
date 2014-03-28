@@ -13,27 +13,90 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="568" height="320"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OSV-e3-hIV">
-                                <rect key="frame" x="60" y="184" width="200" height="200"/>
+                                <rect key="frame" x="420" y="172" width="128" height="128"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="gBI-n0-trb"/>
-                                    <constraint firstAttribute="height" constant="200" id="hGI-vc-Gvo"/>
+                                    <constraint firstAttribute="width" constant="128" id="gBI-n0-trb"/>
+                                    <constraint firstAttribute="height" constant="128" id="hGI-vc-Gvo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ko3-uF-bhA">
+                                <rect key="frame" x="20" y="20" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="DgW-w8-nVP"/>
+                                    <constraint firstAttribute="height" constant="128" id="oaM-nF-QYo"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="44Z-d7-6TD">
+                                <rect key="frame" x="120" y="172" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="FdK-31-5PM"/>
+                                    <constraint firstAttribute="height" constant="128" id="zqf-jZ-L41"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LxO-26-thE">
+                                <rect key="frame" x="270" y="60" width="128" height="128"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="REo-Tp-PbU"/>
+                                    <constraint firstAttribute="width" constant="128" id="fiQ-Pn-JLm"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MAt-l1-qjZ">
+                                <rect key="frame" x="328" y="110" width="200" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Jdc-Eq-HKA"/>
+                                    <constraint firstAttribute="width" constant="200" id="PZO-vz-zwc"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yM7-o1-VOb">
+                                <rect key="frame" x="40" y="60" width="100" height="200"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="4Uw-ny-Ine"/>
+                                    <constraint firstAttribute="width" constant="100" id="XyS-2Q-S4W"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="OSV-e3-hIV" secondAttribute="centerX" id="NSb-VJ-u80"/>
-                            <constraint firstAttribute="centerY" secondItem="OSV-e3-hIV" secondAttribute="centerY" id="Xfg-k5-UUL"/>
+                            <constraint firstAttribute="trailing" secondItem="OSV-e3-hIV" secondAttribute="trailing" constant="20" id="1bb-Hd-Xym"/>
+                            <constraint firstItem="44Z-d7-6TD" firstAttribute="top" secondItem="Ko3-uF-bhA" secondAttribute="bottom" constant="24" id="9xL-g6-zoM"/>
+                            <constraint firstItem="44Z-d7-6TD" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="120" id="Grn-Lk-jcg"/>
+                            <constraint firstAttribute="centerY" secondItem="MAt-l1-qjZ" secondAttribute="centerY" id="Kj8-pr-vhn"/>
+                            <constraint firstAttribute="centerY" secondItem="yM7-o1-VOb" secondAttribute="centerY" id="R3A-Fw-lL4"/>
+                            <constraint firstItem="Ko3-uF-bhA" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="Sgw-Hd-6TH"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="OSV-e3-hIV" secondAttribute="bottom" constant="20" id="VQE-xY-BQg"/>
+                            <constraint firstItem="Ko3-uF-bhA" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="Y3P-xG-d3q"/>
+                            <constraint firstItem="MAt-l1-qjZ" firstAttribute="leading" relation="lessThanOrEqual" secondItem="yM7-o1-VOb" secondAttribute="trailing" constant="188" id="glb-bv-z6q"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="LxO-26-thE" secondAttribute="bottom" constant="132" id="gxD-cc-iqR"/>
+                            <constraint firstAttribute="trailing" secondItem="MAt-l1-qjZ" secondAttribute="trailing" constant="40" id="htn-Kc-6q6"/>
+                            <constraint firstItem="yM7-o1-VOb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="40" id="nZe-YB-5Ch"/>
+                            <constraint firstItem="OSV-e3-hIV" firstAttribute="leading" secondItem="LxO-26-thE" secondAttribute="trailing" constant="22" id="qXm-c2-cr6"/>
                         </constraints>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="layerView" destination="OSV-e3-hIV" id="0RT-cv-VDF"/>
+                        <outlet property="anchorView" destination="OSV-e3-hIV" id="cOa-AV-hvg"/>
+                        <outlet property="button1View" destination="yM7-o1-VOb" id="D8n-3Q-NK6"/>
+                        <outlet property="button2View" destination="MAt-l1-qjZ" id="THA-9q-oyU"/>
+                        <outlet property="coneView" destination="Ko3-uF-bhA" id="5SC-p9-1n9"/>
+                        <outlet property="iglooView" destination="LxO-26-thE" id="dxm-ng-FpZ"/>
+                        <outlet property="shipView" destination="44Z-d7-6TD" id="lbE-Ah-6vZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
