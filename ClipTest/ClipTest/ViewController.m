@@ -66,6 +66,11 @@
   self.view3.layer.shadowOffset = CGSizeMake(0.0f, 5.0f);
   self.view3.layer.shadowPath = circlePath;
   CGPathRelease(circlePath);
+  
+  CALayer *maskLayer = [CALayer layer];
+  maskLayer.frame = self.view2.bounds;
+  maskLayer.contents = (__bridge id)cone.CGImage;
+  self.view2.layer.mask = maskLayer;
 }
 
 @end

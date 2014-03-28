@@ -55,6 +55,10 @@
                                                     <constraint firstAttribute="height" constant="175" id="mw4-gf-KTO"/>
                                                 </constraints>
                                             </view>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Igloo" translatesAutoresizingMaskIntoConstraints="NO" id="R2c-SP-2oJ">
+                                                <rect key="frame" x="-41" y="-40" width="256" height="256"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                         <constraints>
@@ -109,6 +113,9 @@
             </objects>
         </scene>
     </scenes>
+    <resources>
+        <image name="Igloo" width="256" height="256"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
