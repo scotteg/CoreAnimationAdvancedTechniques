@@ -10,82 +10,34 @@
 @import QuartzCore;
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIView *layerView;
-@property (weak, nonatomic) CALayer *blueLayer;
+@property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (weak, nonatomic) IBOutlet UIView *view1;
+@property (weak, nonatomic) IBOutlet UIView *view2;
 @end
 
 @implementation ViewController
-
-CGAffineTransform CGAffineTransformMakeShear(CGFloat x, CGFloat y)
-{
-  CGAffineTransform transform = CGAffineTransformIdentity;
-  transform.c = -x;
-  transform.b = y;
-  return transform;
-}
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
   
-//  self.blueLayer = [CALayer layer];
-//  self.blueLayer.frame = CGRectMake(50.0f, 50.0f, 100.0f, 100.0f);
-//  self.blueLayer.backgroundColor = [UIColor blueColor].CGColor;
-//  self.blueLayer.delegate = self;
-//  self.blueLayer.contentsScale = [UIScreen mainScreen].scale;
-//  [self.layerView.layer addSublayer:self.blueLayer];
-//  [self.blueLayer display]; // Force redraw to display red circle
-  
   UIImage *snowman = [UIImage imageNamed:@"Snowman"];
-  self.layerView.layer.contents = (__bridge id)snowman.CGImage;
-  self.layerView.layer.contentsGravity = kCAGravityResizeAspect;
   
-  CGAffineTransform transform = CGAffineTransformIdentity;
+  self.view1.layer.contents = (__bridge id)snowman.CGImage;
+  self.view1.layer.contentsGravity = kCAGravityResizeAspect;
   
-  // The order of transforms affects the result
+  self.view2.layer.contents = (__bridge id)snowman.CGImage;
+  self.view2.layer.contentsGravity = kCAGravityResizeAspect;
   
-//  transform = CGAffineTransformMakeRotation(M_PI_4);
-  transform = CGAffineTransformMakeShear(1.0f, 0.0f);
+  CATransform3D perspective = CATransform3DIdentity;
+  perspective.m34 = -1.0 / 500.0f;
+  self.containerView.layer.sublayerTransform = perspective;
   
-//  transform = CGAffineTransformScale(transform, 0.5f, 0.5f); // Scale 50%
-//  transform = CGAffineTransformRotate(transform, M_PI / 180.0f * 30.0f); // Rotate 30 degrees
-//  transform = CGAffineTransformTranslate(transform, 200.0f, 0.0f); // Translate 200 points
+  CATransform3D transform1 = CATransform3DMakeRotation(M_PI, 0.0f, 1.0f, 0.0f); // Rotate 45 degrees along y
+  self.view1.layer.transform = transform1;
   
-  self.layerView.layer.affineTransform = transform;
-}
-
-//- (void)drawLayer:(CALayer *)layer inContext:(CGContextRef)ctx
-//{
-//  CGContextSetLineWidth(ctx, 10.0f);
-//  CGContextSetStrokeColorWithColor(ctx, [UIColor redColor].CGColor);
-//  CGContextStrokeEllipseInRect(ctx, CGRectInset(layer.bounds, 5.0f, 5.0f));
-//}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-//  CGPoint point = [[touches anyObject] locationInView:self.view];
-  
-  // containsPoint approach
-//  point = [self.layerView.layer convertPoint:point fromLayer:self.view.layer];
-//  
-//  if ([self.layerView.layer containsPoint:point]) {
-//    point = [self.blueLayer convertPoint:point fromLayer:self.layerView.layer];
-//    
-//    if ([self.blueLayer containsPoint:point]) {
-//      [[[UIAlertView alloc] initWithTitle:@"Inside Blue Layer" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-//    } else {
-//      [[[UIAlertView alloc] initWithTitle:@"Inside White Layer" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-//    }
-//  }
-  
-  // hitTest approach
-//  CALayer *layer = [self.layerView.layer hitTest:point];
-//  
-//  if (layer == self.blueLayer) {
-//    [[[UIAlertView alloc] initWithTitle:@"Inside Blue Layer" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-//  } else {
-//    [[[UIAlertView alloc] initWithTitle:@"Inside White Layer" message:nil delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil] show];
-//  }
+  CATransform3D transform2 = CATransform3DMakeRotation(-M_PI_4, 0.0f, 1.0f, 0.0f);
+  self.view2.layer.transform = transform2;
 }
 
 @end

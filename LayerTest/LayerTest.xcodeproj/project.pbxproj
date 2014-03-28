@@ -21,6 +21,7 @@
 		D20EFA1918E579A2007C4DE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20EF9FB18E579A2007C4DE5 /* UIKit.framework */; };
 		D20EFA2118E579A2007C4DE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D20EFA1F18E579A2007C4DE5 /* InfoPlist.strings */; };
 		D20EFA2318E579A2007C4DE5 /* LayerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20EFA2218E579A2007C4DE5 /* LayerTestTests.m */; };
+		D2FE07CA18E628BC0043A2DF /* CubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2FE07C918E628BC0043A2DF /* CubeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		D20EFA1E18E579A2007C4DE5 /* LayerTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LayerTestTests-Info.plist"; sourceTree = "<group>"; };
 		D20EFA2018E579A2007C4DE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D20EFA2218E579A2007C4DE5 /* LayerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LayerTestTests.m; sourceTree = "<group>"; };
+		D2FE07C818E628BC0043A2DF /* CubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CubeViewController.h; sourceTree = "<group>"; };
+		D2FE07C918E628BC0043A2DF /* CubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CubeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,11 +117,13 @@
 			children = (
 				D20EFA0618E579A2007C4DE5 /* AppDelegate.h */,
 				D20EFA0718E579A2007C4DE5 /* AppDelegate.m */,
+				D20EFA0F18E579A2007C4DE5 /* Images.xcassets */,
 				D20EFA0918E579A2007C4DE5 /* Main.storyboard */,
+				D20EF9FE18E579A2007C4DE5 /* Supporting Files */,
 				D20EFA0C18E579A2007C4DE5 /* ViewController.h */,
 				D20EFA0D18E579A2007C4DE5 /* ViewController.m */,
-				D20EFA0F18E579A2007C4DE5 /* Images.xcassets */,
-				D20EF9FE18E579A2007C4DE5 /* Supporting Files */,
+				D2FE07C818E628BC0043A2DF /* CubeViewController.h */,
+				D2FE07C918E628BC0043A2DF /* CubeViewController.m */,
 			);
 			path = LayerTest;
 			sourceTree = "<group>";
@@ -250,6 +255,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D20EFA0E18E579A2007C4DE5 /* ViewController.m in Sources */,
+				D2FE07CA18E628BC0043A2DF /* CubeViewController.m in Sources */,
 				D20EFA0818E579A2007C4DE5 /* AppDelegate.m in Sources */,
 				D20EFA0418E579A2007C4DE5 /* main.m in Sources */,
 			);
@@ -456,6 +462,7 @@
 				D20EFA2818E579A2007C4DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20EFA2918E579A2007C4DE5 /* Build configuration list for PBXNativeTarget "LayerTestTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				D20EFA2B18E579A2007C4DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
