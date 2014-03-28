@@ -147,23 +147,63 @@
                                     <constraint firstAttribute="width" constant="380" id="wfX-DI-ipD"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lmL-4l-Pth">
+                                <rect key="frame" x="50" y="250" width="220" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1X-Dh-jKT">
+                                        <rect key="frame" x="55" y="14" width="110" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="iqE-wP-ikI"/>
+                                    <constraint firstAttribute="width" constant="220" id="l1H-ss-UCK"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KPq-Dg-ms2">
+                                <rect key="frame" x="298" y="250" width="220" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Hello World" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zaS-NM-dHw">
+                                        <rect key="frame" x="55" y="14" width="110" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="7ka-6z-YWn"/>
+                                    <constraint firstAttribute="height" constant="50" id="u4l-qr-4jh"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KPq-Dg-ms2" secondAttribute="trailing" constant="50" id="4uO-XH-tSn"/>
                             <constraint firstAttribute="centerX" secondItem="FHO-Eh-neF" secondAttribute="centerX" id="LGG-Yd-BQq"/>
+                            <constraint firstItem="lmL-4l-Pth" firstAttribute="top" secondItem="FHO-Eh-neF" secondAttribute="bottom" constant="20" id="Y2b-Xp-DlP"/>
+                            <constraint firstItem="8Lm-fl-c5e" firstAttribute="top" secondItem="KPq-Dg-ms2" secondAttribute="bottom" constant="20" id="cBw-IV-fpp"/>
+                            <constraint firstItem="lmL-4l-Pth" firstAttribute="leading" secondItem="SAw-Uv-ks2" secondAttribute="leading" constant="50" id="eSe-zM-dbq"/>
                             <constraint firstAttribute="centerY" secondItem="FHO-Eh-neF" secondAttribute="centerY" id="pFp-gR-1kw"/>
                         </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="helloWorldView" destination="KPq-Dg-ms2" id="hQ3-Zy-EDi"/>
                         <outletCollection property="digitViews" destination="9wZ-t4-9rS" id="FZW-4M-VXQ"/>
                         <outletCollection property="digitViews" destination="fSa-LE-dxJ" id="d8N-04-flU"/>
                         <outletCollection property="digitViews" destination="CpW-97-X6Y" id="MXO-Xn-Zu6"/>
                         <outletCollection property="digitViews" destination="d0K-rc-zo0" id="VgL-Xf-BsH"/>
                         <outletCollection property="digitViews" destination="con-8N-3CF" id="2OI-GT-ZVF"/>
                         <outletCollection property="digitViews" destination="NmV-H7-WGl" id="W7i-1o-b8Q"/>
-                        <segue destination="vXZ-lx-hvc" kind="push" identifier="ShowAnalog" id="KkT-bz-ogc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ri1-FU-Ike" userLabel="First Responder" sceneMemberID="firstResponder"/>

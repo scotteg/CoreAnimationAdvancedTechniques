@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *secondImageView;
 @property (strong, nonatomic) NSTimer *timer;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *digitViews;
+@property (weak, nonatomic) IBOutlet UIView *helloWorldView;
 @end
 
 @implementation ViewController
@@ -39,6 +40,12 @@
   
   self.timer = [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(tick) userInfo:nil repeats:YES];
   [self tick];
+  
+  self.helloWorldView.alpha = 0.5f;
+  
+  // Not necessary in iOS 7
+//  self.helloWorldView.layer.shouldRasterize = YES;
+//  self.helloWorldView.layer.rasterizationScale = [UIScreen mainScreen].scale;
 }
 
 - (void)tick
@@ -67,7 +74,6 @@
   
   [self setDigit:components.second / 10 forView:self.digitViews[4]];
   [self setDigit:components.second % 10 forView:self.digitViews[5]];
-  
 }
 
 - (void)setDigit:(NSInteger)digit forView:(UIView *)view
