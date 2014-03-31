@@ -10,6 +10,8 @@
 
 @interface KeyPathViewController ()
 @property (weak, nonatomic) IBOutlet UIView *containerView;
+@property (strong, nonatomic) CAShapeLayer *shipLayer;
+@property (strong, nonatomic) UIBezierPath *bezierPath;
 @end
 
 @implementation KeyPathViewController
@@ -19,46 +21,56 @@
   [super viewDidLoad];
   
   // Create path
-  UIBezierPath *bezierPath = [UIBezierPath new];
-  [bezierPath moveToPoint:CGPointMake(0.0f, 150.0f)];
-  [bezierPath addCurveToPoint:CGPointMake(300.0f, 150.0f)
+  self.bezierPath = [UIBezierPath new];
+  [self.bezierPath moveToPoint:CGPointMake(0.0f, 150.0f)];
+  [self.bezierPath addCurveToPoint:CGPointMake(300.0f, 150.0f)
                 controlPoint1:CGPointMake(75.0f, 0.0f)
                 controlPoint2:CGPointMake(225.0f, 300.0f)];
   
   // Draw path
   CAShapeLayer *pathLayer = [CAShapeLayer layer];
-  pathLayer.path = bezierPath.CGPath;
+  pathLayer.path = self.bezierPath.CGPath;
   pathLayer.fillColor = [UIColor clearColor].CGColor;
-  pathLayer.strokeColor = [UIColor redColor].CGColor;
+  pathLayer.strokeColor = [UIColor lightGrayColor].CGColor;
   pathLayer.lineWidth = 3.0f;
   [self.containerView.layer addSublayer:pathLayer];
   
   // Add ship
-  CALayer *shipLayer = [CALayer layer];
-  shipLayer.frame = CGRectMake(0.0f, 0.0f, 64.0f, 64.0f);
-  shipLayer.position = CGPointMake(0.0f, 150.0f);
-  shipLayer.contents = (__bridge id)[UIImage imageNamed:@"Ship"].CGImage;
-  [self.containerView.layer addSublayer:shipLayer];
-  
+  self.shipLayer = [CALayer layer];
+  self.shipLayer.frame = CGRectMake(0.0f, 0.0f, 64.0f, 64.0f);
+  self.shipLayer.position = CGPointMake(0.0f, 150.0f);
+  self.shipLayer.contents = (__bridge id)[UIImage imageNamed:@"Ship"].CGImage;
+  [self.containerView.layer addSublayer:self.shipLayer];
+}
+
+- (IBAction)startTapped:(id)sender
+{
   // Create keyframe animation
   CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
   animation.keyPath = @"position";
-//  animation.duration = 4.0;
-  animation.path = bezierPath.CGPath;
-//  animation.rotationMode = kCAAnimationRotateAuto;
+  //  animation.duration = 4.0;
+  animation.path = self.bezierPath.CGPath;
+  //  animation.rotationMode = kCAAnimationRotateAuto;
   
   // Animate with rotation
   CABasicAnimation *rotation = [CABasicAnimation animation];
   rotation.keyPath = @"transform.rotation";
-//  rotation.duration = 2.0;
+  //  rotation.duration = 2.0;
   rotation.byValue = @(M_PI * 2.0f);
-//  rotation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f)];
+  //  rotation.toValue = [NSValue valueWithCATransform3D:CATransform3DMakeRotation(M_PI, 0.0f, 0.0f, 1.0f)];
   
   CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
   groupAnimation.animations = @[animation, rotation];
   groupAnimation.duration = 4.0;
+  groupAnimation.autoreverses = YES;
   
-  [shipLayer addAnimation:groupAnimation forKey:nil];
+  [self.shipLayer addAnimation:groupAnimation forKey:@"moveAndRotate"];
+}
+
+- (IBAction)stopTapped:(id)sender
+{
+//  [self.shipLayer removeAnimationForKey:@"moveAndRotate"];
+  [self.shipLayer removeAllAnimations];
 }
 
 @end
