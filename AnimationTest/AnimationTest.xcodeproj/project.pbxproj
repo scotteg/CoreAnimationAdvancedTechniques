@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D22B8D7118E986FA003BD939 /* KeyPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8D7018E986FA003BD939 /* KeyPathViewController.m */; };
 		D22B8D7418E98E67003BD939 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8D7318E98E67003BD939 /* TransitionViewController.m */; };
+		D22B8DBE18E99DE1003BD939 /* CustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8DBD18E99DE1003BD939 /* CustomTransitionViewController.m */; };
 		D23247B818E8527800567D27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247B718E8527800567D27 /* Foundation.framework */; };
 		D23247BA18E8527800567D27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247B918E8527800567D27 /* CoreGraphics.framework */; };
 		D23247BC18E8527800567D27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247BB18E8527800567D27 /* UIKit.framework */; };
@@ -42,6 +43,8 @@
 		D22B8D7018E986FA003BD939 /* KeyPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyPathViewController.m; sourceTree = "<group>"; };
 		D22B8D7218E98E67003BD939 /* TransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
 		D22B8D7318E98E67003BD939 /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
+		D22B8DBC18E99DE1003BD939 /* CustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionViewController.h; sourceTree = "<group>"; };
+		D22B8DBD18E99DE1003BD939 /* CustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionViewController.m; sourceTree = "<group>"; };
 		D23247B418E8527800567D27 /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23247B718E8527800567D27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D23247B918E8527800567D27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -126,17 +129,19 @@
 			children = (
 				D23247C618E8527800567D27 /* AppDelegate.h */,
 				D23247C718E8527800567D27 /* AppDelegate.m */,
-				D23247C918E8527800567D27 /* Main.storyboard */,
-				D23247CC18E8527800567D27 /* ImplicitViewController.h */,
-				D23247CD18E8527800567D27 /* ImplicitViewController.m */,
-				D23247CF18E8527800567D27 /* Images.xcassets */,
-				D23247BE18E8527800567D27 /* Supporting Files */,
+				D22B8DBC18E99DE1003BD939 /* CustomTransitionViewController.h */,
+				D22B8DBD18E99DE1003BD939 /* CustomTransitionViewController.m */,
 				D268D5D718E8B84F0001CF15 /* ExplicitViewController.h */,
 				D268D5D818E8B84F0001CF15 /* ExplicitViewController.m */,
+				D23247CF18E8527800567D27 /* Images.xcassets */,
+				D23247CC18E8527800567D27 /* ImplicitViewController.h */,
+				D23247CD18E8527800567D27 /* ImplicitViewController.m */,
 				D268D5DD18E9824D0001CF15 /* KeyframeViewController.h */,
 				D268D5DE18E9824D0001CF15 /* KeyframeViewController.m */,
 				D22B8D6F18E986FA003BD939 /* KeyPathViewController.h */,
 				D22B8D7018E986FA003BD939 /* KeyPathViewController.m */,
+				D23247C918E8527800567D27 /* Main.storyboard */,
+				D23247BE18E8527800567D27 /* Supporting Files */,
 				D22B8D7218E98E67003BD939 /* TransitionViewController.h */,
 				D22B8D7318E98E67003BD939 /* TransitionViewController.m */,
 			);
@@ -269,6 +274,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D22B8DBE18E99DE1003BD939 /* CustomTransitionViewController.m in Sources */,
 				D268D5D918E8B84F0001CF15 /* ExplicitViewController.m in Sources */,
 				D22B8D7418E98E67003BD939 /* TransitionViewController.m in Sources */,
 				D23247CE18E8527800567D27 /* ImplicitViewController.m in Sources */,
