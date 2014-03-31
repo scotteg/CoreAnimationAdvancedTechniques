@@ -14,13 +14,14 @@
 		D20EFA4518E5A5E3007C4DE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D20EFA4418E5A5E3007C4DE5 /* main.m */; };
 		D20EFA4918E5A5E3007C4DE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D20EFA4818E5A5E3007C4DE5 /* AppDelegate.m */; };
 		D20EFA4C18E5A5E3007C4DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D20EFA4A18E5A5E3007C4DE5 /* Main.storyboard */; };
-		D20EFA4F18E5A5E3007C4DE5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20EFA4E18E5A5E3007C4DE5 /* ViewController.m */; };
+		D20EFA4F18E5A5E3007C4DE5 /* DigitalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D20EFA4E18E5A5E3007C4DE5 /* DigitalViewController.m */; };
 		D20EFA5118E5A5E3007C4DE5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D20EFA5018E5A5E3007C4DE5 /* Images.xcassets */; };
 		D20EFA5818E5A5E3007C4DE5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20EFA5718E5A5E3007C4DE5 /* XCTest.framework */; };
 		D20EFA5918E5A5E3007C4DE5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20EFA3818E5A5E3007C4DE5 /* Foundation.framework */; };
 		D20EFA5A18E5A5E3007C4DE5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D20EFA3C18E5A5E3007C4DE5 /* UIKit.framework */; };
 		D20EFA6218E5A5E3007C4DE5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D20EFA6018E5A5E3007C4DE5 /* InfoPlist.strings */; };
 		D20EFA6418E5A5E3007C4DE5 /* ClockFaceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D20EFA6318E5A5E3007C4DE5 /* ClockFaceTests.m */; };
+		D268D5DC18E973AB0001CF15 /* ClockFaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D268D5DB18E973AB0001CF15 /* ClockFaceViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		D20EFA4718E5A5E3007C4DE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D20EFA4818E5A5E3007C4DE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D20EFA4B18E5A5E3007C4DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D20EFA4D18E5A5E3007C4DE5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D20EFA4E18E5A5E3007C4DE5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D20EFA4D18E5A5E3007C4DE5 /* DigitalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DigitalViewController.h; sourceTree = "<group>"; };
+		D20EFA4E18E5A5E3007C4DE5 /* DigitalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DigitalViewController.m; sourceTree = "<group>"; };
 		D20EFA5018E5A5E3007C4DE5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D20EFA5618E5A5E3007C4DE5 /* ClockFaceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ClockFaceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D20EFA5718E5A5E3007C4DE5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D20EFA5F18E5A5E3007C4DE5 /* ClockFaceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ClockFaceTests-Info.plist"; sourceTree = "<group>"; };
 		D20EFA6118E5A5E3007C4DE5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D20EFA6318E5A5E3007C4DE5 /* ClockFaceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClockFaceTests.m; sourceTree = "<group>"; };
+		D268D5DA18E973AB0001CF15 /* ClockFaceViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClockFaceViewController.h; sourceTree = "<group>"; };
+		D268D5DB18E973AB0001CF15 /* ClockFaceViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClockFaceViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 				D20EFA4718E5A5E3007C4DE5 /* AppDelegate.h */,
 				D20EFA4818E5A5E3007C4DE5 /* AppDelegate.m */,
 				D20EFA4A18E5A5E3007C4DE5 /* Main.storyboard */,
-				D20EFA4D18E5A5E3007C4DE5 /* ViewController.h */,
-				D20EFA4E18E5A5E3007C4DE5 /* ViewController.m */,
+				D20EFA4D18E5A5E3007C4DE5 /* DigitalViewController.h */,
+				D20EFA4E18E5A5E3007C4DE5 /* DigitalViewController.m */,
 				D20EFA5018E5A5E3007C4DE5 /* Images.xcassets */,
 				D20EFA3F18E5A5E3007C4DE5 /* Supporting Files */,
+				D268D5DA18E973AB0001CF15 /* ClockFaceViewController.h */,
+				D268D5DB18E973AB0001CF15 /* ClockFaceViewController.m */,
 			);
 			path = ClockFace;
 			sourceTree = "<group>";
@@ -249,8 +254,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D20EFA4F18E5A5E3007C4DE5 /* ViewController.m in Sources */,
+				D20EFA4F18E5A5E3007C4DE5 /* DigitalViewController.m in Sources */,
 				D20EFA4918E5A5E3007C4DE5 /* AppDelegate.m in Sources */,
+				D268D5DC18E973AB0001CF15 /* ClockFaceViewController.m in Sources */,
 				D20EFA4518E5A5E3007C4DE5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -456,6 +462,7 @@
 				D20EFA6918E5A5E3007C4DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D20EFA6A18E5A5E3007C4DE5 /* Build configuration list for PBXNativeTarget "ClockFaceTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				D20EFA6C18E5A5E3007C4DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

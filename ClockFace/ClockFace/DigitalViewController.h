@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DigitalViewController.h
 //  ClockFace
 //
 //  Created by Scott Gardner on 3/28/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DigitalViewController : UIViewController
 
 @end

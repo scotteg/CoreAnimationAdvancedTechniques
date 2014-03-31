@@ -1,34 +1,25 @@
 //
-//  ViewController.m
+//  DigitalViewController.m
 //  ClockFace
 //
 //  Created by Scott Gardner on 3/28/14.
 //  Copyright (c) 2014 Optimac, Inc. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "DigitalViewController.h"
 
-@interface ViewController ()
-@property (weak, nonatomic) IBOutlet UIImageView *hourImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *minuteImageView;
-@property (weak, nonatomic) IBOutlet UIImageView *secondImageView;
+@interface DigitalViewController ()
 @property (strong, nonatomic) NSTimer *timer;
 @property (strong, nonatomic) IBOutletCollection(UIView) NSArray *digitViews;
 @property (weak, nonatomic) IBOutlet UIView *helloWorldView;
 @end
 
-@implementation ViewController
+@implementation DigitalViewController
 
 - (void)viewDidLoad
 {
   [super viewDidLoad];
   
-  // Analog
-//  self.hourImageView.layer.anchorPoint = CGPointMake(0.5f, 0.9f);
-//  self.minuteImageView.layer.anchorPoint = CGPointMake(0.5f, 0.9f);
-//  self.secondImageView.layer.anchorPoint = CGPointMake(0.5f, 0.9f);
-  
-  // Digital
   UIImage *digits = [UIImage imageNamed:@"Digits"];
   
   for (UIView *view in self.digitViews) {
@@ -55,17 +46,6 @@
   
   NSDateComponents *components = [calendar components:units fromDate:[NSDate date]];
   
-  // Analog
-//  CGFloat multiplier = M_PI * 2.0f;
-//  CGFloat hoursAngle = (components.hour / 12.0f) * multiplier;
-//  CGFloat minutesAngle = (components.minute / 60.0f) * multiplier;
-//  CGFloat secondsAngle = (components.second / 60.0f) * multiplier;
-//  
-//  self.hourImageView.transform = CGAffineTransformMakeRotation(hoursAngle);
-//  self.minuteImageView.transform = CGAffineTransformMakeRotation(minutesAngle);
-//  self.secondImageView.transform = CGAffineTransformMakeRotation(secondsAngle);
-  
-  // Digital
   [self setDigit:components.hour / 10 forView:self.digitViews[0]];
   [self setDigit:components.hour % 10 forView:self.digitViews[1]];
   
