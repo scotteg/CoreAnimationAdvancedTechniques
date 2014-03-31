@@ -22,7 +22,7 @@
   
   self.colorLayer = [CALayer layer];
   self.colorLayer.frame = CGRectMake(self.view1.bounds.origin.x + 110.0f, self.view1.bounds.origin.y + 80.0f, 100.0f, 100.0f);
-  self.colorLayer.backgroundColor = [UIColor blueColor].CGColor;
+  self.colorLayer.backgroundColor = [UIColor redColor].CGColor;
   
   // Setting property of backing layer directly instead results in no animation because UIViews disable animation by default outside of animation blocks (by returning nil for the property actions
   //  self.view1.layer.backgroundColor = [UIColor blueColor].CGColor;
@@ -40,13 +40,20 @@
 {
   CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
   animation.keyPath = @"backgroundColor";
-  animation.duration = 2.0;
+  animation.duration = 4.0;
   
   // Must set the ending color to the beginning color because animation will revert to original property value at end; alternatively, set the property value to match the last keyframe before triggering animation
-  animation.values = @[(__bridge id)[UIColor blueColor].CGColor,
-                       (__bridge id)[UIColor redColor].CGColor,
+  animation.values = @[(__bridge id)[UIColor redColor].CGColor,
+                       (__bridge id)[UIColor orangeColor].CGColor,
+                       (__bridge id)[UIColor yellowColor].CGColor,
                        (__bridge id)[UIColor greenColor].CGColor,
-                       (__bridge id)[UIColor blueColor].CGColor];
+                       (__bridge id)[UIColor blueColor].CGColor,
+                       (__bridge id)[UIColor purpleColor].CGColor,
+                       (__bridge id)[UIColor redColor].CGColor];
+  
+  // Add timing function
+  CAMediaTimingFunction *timing = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
+  animation.timingFunctions = @[timing, timing, timing, timing, timing, timing];
   
   [self.colorLayer addAnimation:animation forKey:nil];
 }

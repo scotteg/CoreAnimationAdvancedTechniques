@@ -44,7 +44,10 @@
     [self changeColorTapped:nil];
   } else {
     [CATransaction begin];
-    [CATransaction setAnimationDuration:4.0];
+    [CATransaction setAnimationDuration:1.0];
+    
+    [CATransaction setAnimationTimingFunction:[CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut]];
+    
     self.colorLayer.position = point;
     [CATransaction commit];
   }
