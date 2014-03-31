@@ -12,6 +12,10 @@
 @property (weak, nonatomic) IBOutlet UIView *containerView;
 @property (strong, nonatomic) CAShapeLayer *shipLayer;
 @property (strong, nonatomic) UIBezierPath *bezierPath;
+@property (weak, nonatomic) IBOutlet UISlider *speedSlider;
+@property (weak, nonatomic) IBOutlet UILabel *speedLabel;
+@property (weak, nonatomic) IBOutlet UISlider *timeOffsetSlider;
+@property (weak, nonatomic) IBOutlet UILabel *timeOffsetLabel;
 @end
 
 @implementation KeyPathViewController
@@ -43,12 +47,23 @@
   [self.containerView.layer addSublayer:self.shipLayer];
 }
 
+- (IBAction)sliderValueChanged:(UISlider *)slider
+{
+  slider.value = lroundf(slider.value * 4.0f) / 4.0f;
+  
+  float speed = self.speedSlider.value;
+  self.speedLabel.text = [NSString stringWithFormat:@"%0.2f", speed];
+  
+  CFTimeInterval timeOffset = self.timeOffsetSlider.value;
+  self.timeOffsetLabel.text = [NSString stringWithFormat:@"%0.2f", timeOffset];
+}
+
 - (IBAction)startTapped:(id)sender
 {
   // Create keyframe animation
   CAKeyframeAnimation *animation = [CAKeyframeAnimation animation];
   animation.keyPath = @"position";
-  //  animation.duration = 4.0;
+//  animation.duration = 4.0;
   animation.path = self.bezierPath.CGPath;
   //  animation.rotationMode = kCAAnimationRotateAuto;
   
@@ -61,8 +76,11 @@
   
   CAAnimationGroup *groupAnimation = [CAAnimationGroup animation];
   groupAnimation.animations = @[animation, rotation];
-  groupAnimation.duration = 4.0;
+//  groupAnimation.duration = 4.0;
   groupAnimation.autoreverses = YES;
+  
+  groupAnimation.speed = self.speedSlider.value;
+  groupAnimation.timeOffset = self.timeOffsetSlider.value;
   
   [self.shipLayer addAnimation:groupAnimation forKey:@"moveAndRotate"];
 }

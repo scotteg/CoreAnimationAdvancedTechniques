@@ -10,6 +10,7 @@
 		D22B8D7118E986FA003BD939 /* KeyPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8D7018E986FA003BD939 /* KeyPathViewController.m */; };
 		D22B8D7418E98E67003BD939 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8D7318E98E67003BD939 /* TransitionViewController.m */; };
 		D22B8DBE18E99DE1003BD939 /* CustomTransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8DBD18E99DE1003BD939 /* CustomTransitionViewController.m */; };
+		D22B8DC118E9B12B003BD939 /* TimingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8DC018E9B12B003BD939 /* TimingViewController.m */; };
 		D23247B818E8527800567D27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247B718E8527800567D27 /* Foundation.framework */; };
 		D23247BA18E8527800567D27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247B918E8527800567D27 /* CoreGraphics.framework */; };
 		D23247BC18E8527800567D27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247BB18E8527800567D27 /* UIKit.framework */; };
@@ -45,6 +46,8 @@
 		D22B8D7318E98E67003BD939 /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
 		D22B8DBC18E99DE1003BD939 /* CustomTransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomTransitionViewController.h; sourceTree = "<group>"; };
 		D22B8DBD18E99DE1003BD939 /* CustomTransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTransitionViewController.m; sourceTree = "<group>"; };
+		D22B8DBF18E9B12B003BD939 /* TimingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimingViewController.h; sourceTree = "<group>"; };
+		D22B8DC018E9B12B003BD939 /* TimingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimingViewController.m; sourceTree = "<group>"; };
 		D23247B418E8527800567D27 /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23247B718E8527800567D27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D23247B918E8527800567D27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,8 @@
 				D23247BE18E8527800567D27 /* Supporting Files */,
 				D22B8D7218E98E67003BD939 /* TransitionViewController.h */,
 				D22B8D7318E98E67003BD939 /* TransitionViewController.m */,
+				D22B8DBF18E9B12B003BD939 /* TimingViewController.h */,
+				D22B8DC018E9B12B003BD939 /* TimingViewController.m */,
 			);
 			path = AnimationTest;
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D22B8DBE18E99DE1003BD939 /* CustomTransitionViewController.m in Sources */,
+				D22B8DC118E9B12B003BD939 /* TimingViewController.m in Sources */,
 				D268D5D918E8B84F0001CF15 /* ExplicitViewController.m in Sources */,
 				D22B8D7418E98E67003BD939 /* TransitionViewController.m in Sources */,
 				D23247CE18E8527800567D27 /* ImplicitViewController.m in Sources */,
