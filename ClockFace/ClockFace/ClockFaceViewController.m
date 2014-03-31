@@ -45,7 +45,6 @@
 {
   NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
   NSUInteger units = NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit;
-  
   NSDateComponents *components = [calendar components:units fromDate:[NSDate date]];
   
   CGFloat multiplier = M_PI * 2.0f;
@@ -70,10 +69,18 @@
     // Create transform animation
     CABasicAnimation *animation = [CABasicAnimation animation];
     animation.keyPath = @"transform";
-    animation.toValue = [NSValue valueWithCATransform3D:transform];
+    
+    animation.fromValue = [handView.layer.presentationLayer valueForKey:@"transform"];
+//    animation.toValue = [NSValue valueWithCATransform3D:transform];
+    
     animation.duration = 0.5;
     animation.delegate = self;
-    [animation setValue:handView forKeyPath:@"handView"]; // Use KVC to tag animation with the view
+    
+//    [animation setValue:handView forKeyPath:@"handView"]; // Use KVC to tag animation with the view
+    
+    animation.timingFunction = [CAMediaTimingFunction functionWithControlPoints:1.0f :0.0f :0.75f :1.0f];
+    handView.layer.transform = transform;
+    
     [handView.layer addAnimation:animation forKey:nil];
   } else {
     // Set transform directly
@@ -83,10 +90,10 @@
 
 #pragma mark - CAAnimationDelegate
 
-- (void)animationDidStart:(CABasicAnimation *)anim
-{
-  UIView *handView = [anim valueForKey:@"handView"];
-  handView.layer.transform = [anim.toValue CATransform3DValue];
-}
+//- (void)animationDidStart:(CABasicAnimation *)anim
+//{
+//  UIView *handView = [anim valueForKey:@"handView"];
+//  handView.layer.transform = [anim.toValue CATransform3DValue];
+//}
 
 @end
