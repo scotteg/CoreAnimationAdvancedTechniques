@@ -1,19 +1,19 @@
 //
-//  ViewController.m
+//  ImplicitViewController.m
 //  AnimationTest
 //
 //  Created by Scott Gardner on 3/30/14.
 //  Copyright (c) 2014 Optimac, Inc. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "ImplicitViewController.h"
 
-@interface ViewController ()
+@interface ImplicitViewController ()
 @property (weak, nonatomic) IBOutlet UIView *view1;
 @property (strong, nonatomic) CALayer *colorLayer;
 @end
 
-@implementation ViewController
+@implementation ImplicitViewController
 
 - (void)viewDidLoad
 {

@@ -14,13 +14,14 @@
 		D23247C418E8527800567D27 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D23247C318E8527800567D27 /* main.m */; };
 		D23247C818E8527800567D27 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D23247C718E8527800567D27 /* AppDelegate.m */; };
 		D23247CB18E8527800567D27 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D23247C918E8527800567D27 /* Main.storyboard */; };
-		D23247CE18E8527800567D27 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23247CD18E8527800567D27 /* ViewController.m */; };
+		D23247CE18E8527800567D27 /* ImplicitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D23247CD18E8527800567D27 /* ImplicitViewController.m */; };
 		D23247D018E8527800567D27 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D23247CF18E8527800567D27 /* Images.xcassets */; };
 		D23247D718E8527800567D27 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247D618E8527800567D27 /* XCTest.framework */; };
 		D23247D818E8527800567D27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247B718E8527800567D27 /* Foundation.framework */; };
 		D23247D918E8527800567D27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247BB18E8527800567D27 /* UIKit.framework */; };
 		D23247E118E8527800567D27 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D23247DF18E8527800567D27 /* InfoPlist.strings */; };
 		D23247E318E8527800567D27 /* AnimationTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D23247E218E8527800567D27 /* AnimationTestTests.m */; };
+		D268D5D918E8B84F0001CF15 /* ExplicitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D268D5D818E8B84F0001CF15 /* ExplicitViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,14 +46,16 @@
 		D23247C618E8527800567D27 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D23247C718E8527800567D27 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		D23247CA18E8527800567D27 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D23247CC18E8527800567D27 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D23247CD18E8527800567D27 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		D23247CC18E8527800567D27 /* ImplicitViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImplicitViewController.h; sourceTree = "<group>"; };
+		D23247CD18E8527800567D27 /* ImplicitViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImplicitViewController.m; sourceTree = "<group>"; };
 		D23247CF18E8527800567D27 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D23247D518E8527800567D27 /* AnimationTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AnimationTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23247D618E8527800567D27 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D23247DE18E8527800567D27 /* AnimationTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AnimationTestTests-Info.plist"; sourceTree = "<group>"; };
 		D23247E018E8527800567D27 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D23247E218E8527800567D27 /* AnimationTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AnimationTestTests.m; sourceTree = "<group>"; };
+		D268D5D718E8B84F0001CF15 /* ExplicitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExplicitViewController.h; sourceTree = "<group>"; };
+		D268D5D818E8B84F0001CF15 /* ExplicitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExplicitViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,10 +118,12 @@
 				D23247C618E8527800567D27 /* AppDelegate.h */,
 				D23247C718E8527800567D27 /* AppDelegate.m */,
 				D23247C918E8527800567D27 /* Main.storyboard */,
-				D23247CC18E8527800567D27 /* ViewController.h */,
-				D23247CD18E8527800567D27 /* ViewController.m */,
+				D23247CC18E8527800567D27 /* ImplicitViewController.h */,
+				D23247CD18E8527800567D27 /* ImplicitViewController.m */,
 				D23247CF18E8527800567D27 /* Images.xcassets */,
 				D23247BE18E8527800567D27 /* Supporting Files */,
+				D268D5D718E8B84F0001CF15 /* ExplicitViewController.h */,
+				D268D5D818E8B84F0001CF15 /* ExplicitViewController.m */,
 			);
 			path = AnimationTest;
 			sourceTree = "<group>";
@@ -249,7 +254,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D23247CE18E8527800567D27 /* ViewController.m in Sources */,
+				D268D5D918E8B84F0001CF15 /* ExplicitViewController.m in Sources */,
+				D23247CE18E8527800567D27 /* ImplicitViewController.m in Sources */,
 				D23247C818E8527800567D27 /* AppDelegate.m in Sources */,
 				D23247C418E8527800567D27 /* main.m in Sources */,
 			);
@@ -456,6 +462,7 @@
 				D23247E818E8527800567D27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D23247E918E8527800567D27 /* Build configuration list for PBXNativeTarget "AnimationTestTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				D23247EB18E8527800567D27 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
