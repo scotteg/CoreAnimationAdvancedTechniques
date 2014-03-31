@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D22B8D7118E986FA003BD939 /* KeyPathViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8D7018E986FA003BD939 /* KeyPathViewController.m */; };
+		D22B8D7418E98E67003BD939 /* TransitionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D22B8D7318E98E67003BD939 /* TransitionViewController.m */; };
 		D23247B818E8527800567D27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247B718E8527800567D27 /* Foundation.framework */; };
 		D23247BA18E8527800567D27 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247B918E8527800567D27 /* CoreGraphics.framework */; };
 		D23247BC18E8527800567D27 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23247BB18E8527800567D27 /* UIKit.framework */; };
@@ -39,6 +40,8 @@
 /* Begin PBXFileReference section */
 		D22B8D6F18E986FA003BD939 /* KeyPathViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyPathViewController.h; sourceTree = "<group>"; };
 		D22B8D7018E986FA003BD939 /* KeyPathViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyPathViewController.m; sourceTree = "<group>"; };
+		D22B8D7218E98E67003BD939 /* TransitionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TransitionViewController.h; sourceTree = "<group>"; };
+		D22B8D7318E98E67003BD939 /* TransitionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TransitionViewController.m; sourceTree = "<group>"; };
 		D23247B418E8527800567D27 /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D23247B718E8527800567D27 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D23247B918E8527800567D27 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -134,6 +137,8 @@
 				D268D5DE18E9824D0001CF15 /* KeyframeViewController.m */,
 				D22B8D6F18E986FA003BD939 /* KeyPathViewController.h */,
 				D22B8D7018E986FA003BD939 /* KeyPathViewController.m */,
+				D22B8D7218E98E67003BD939 /* TransitionViewController.h */,
+				D22B8D7318E98E67003BD939 /* TransitionViewController.m */,
 			);
 			path = AnimationTest;
 			sourceTree = "<group>";
@@ -265,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D268D5D918E8B84F0001CF15 /* ExplicitViewController.m in Sources */,
+				D22B8D7418E98E67003BD939 /* TransitionViewController.m in Sources */,
 				D23247CE18E8527800567D27 /* ImplicitViewController.m in Sources */,
 				D23247C818E8527800567D27 /* AppDelegate.m in Sources */,
 				D22B8D7118E986FA003BD939 /* KeyPathViewController.m in Sources */,
